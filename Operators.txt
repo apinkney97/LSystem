@@ -1,0 +1,39 @@
+Drawing Operators:
+
+F   Draw forward
+G   Move forward
++   increase F/G angle by preset amount
+-   decrease F/G angle by present amount
+|   turn F/G angle by 180 degrees (or as near as possible if angle is odd)
+
+D   Draw forward
+M   Move forward
+\n  add n degrees to D/M angle
+/n  subtract n degrees from D/M angle
+
+!   reverse meaning of + and -, and \ and /
+
+<n  cycle colour by n places down
+>n  cycle colour by n places up
+Cn  set colour to colour n
+
+@n  scale current length by a factor of n
+
+[   save the current graphics state
+]   restore the most-recently saved graphics state
+
+Notes:
+All drawing commands are case-insensitive
+
+[ and ] can be nested, and do not have to balance (although they probably should)
+
+In all cases above, 'n' should be replaced by a valid representation of a number, eg
+\31.4443
+would add 31.4443 degrees to the angle used by the D and M operators
+
+The number can be preceded by 'i' for its recIprocal ("Inverse"?), and/or 'q' for its sQuare root, eg
+@iq2
+would scale the current length by 1/sqrt(2).
+i and q can be supplied in either order and are case-insensitive.
+
+All other characters are ignored for the purposes of drawing, but may be used for string generation.
