@@ -3,7 +3,7 @@ Drawing Operators:
 F   Draw forward
 G   Move forward
 +   increase F/G angle by preset amount
--   decrease F/G angle by present amount
+-   decrease F/G angle by preset amount
 |   turn F/G angle by 180 degrees (or as near as possible if angle is odd)
 
 D   Draw forward
