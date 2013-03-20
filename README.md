@@ -18,4 +18,5 @@ L-Systems are specified within .l files. The program attempts to read any .l fil
 
 See Operators.txt for an overview of the drawing operators.
 
-See http://www.nahee.com/spanky/www/fractint/lsys/tutor.html for full details of the format used by the .l files.
+See http://www.nahee.com/spanky/www/fractint/lsys/tutor.html for an overview of L-Systems, and
+http://www.fractalsciencekit.com/lsysprog/lsysprog.htm for a fairly comprehensive coverage of the format used by the .l files.
