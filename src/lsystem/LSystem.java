@@ -1,5 +1,9 @@
 package lsystem;
 
+/**
+ * @author Alex Pinkney
+ */
+
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -8,20 +12,7 @@ import java.util.Scanner;
 public class LSystem {
 
     public static void main(String[] args) {
-        /*if (args.length < 2) {
-        System.err.println("Error - too few arguments specified");
-        System.exit(-1);
-        }
-        String filename = args[0];
-        int iterations = Integer.parseInt(args[1]);*/
-
         new LSystem();
-
-
-
-
-        //new LSystemDisplay(filename, iterations);
-
     }
     private ArrayList<LSystemRuleset> rulesets;
 
@@ -38,10 +29,6 @@ public class LSystem {
             }
         }
 
-//        for(LSystemRuleset lsr : rulesets) {
-//            lsr.printRules();
-//            System.out.println();
-//        }
         Collections.sort(rulesets);
 
         LSystemSettings settingsWindow = new LSystemSettings(rulesets);
@@ -57,8 +44,7 @@ public class LSystem {
             while (s.hasNextLine()) {
                 String line = s.nextLine().trim();
                 //System.out.println(line);
-                if (line.isEmpty()) //Skip blank lines
-                {
+                if (line.isEmpty()) { //Skip blank lines
                     continue;
                 }
                 if (rules == null) {

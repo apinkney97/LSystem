@@ -1,5 +1,8 @@
 package lsystem;
 
+/**
+ * @author Alex Pinkney
+ */
 import java.awt.Color;
 import java.awt.Graphics;
 import java.util.Stack;
@@ -38,7 +41,6 @@ public class LSystemDisplay extends JFrame {
 
     }
     public JPanel panel = new JPanel() {
-
         @Override
         protected void paintComponent(Graphics g) {
 
@@ -172,8 +174,9 @@ public class LSystemDisplay extends JFrame {
                             gstack.push(new GState(x, y, t, t2, size, reverse, colour));
                             break;
                         case ']':
-                            if(gstack.empty())
+                            if (gstack.empty()) {
                                 break;
+                            }
                             GState state = gstack.pop();
                             x = state.x;
                             y = state.y;

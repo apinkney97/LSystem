@@ -1,17 +1,12 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 package lsystem;
 
+/**
+ * @author Alex Pinkney
+ */
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Set;
 
-/**
- *
- * @author azp
- */
 public class LSystemRuleset implements Comparable<LSystemRuleset> {
 
     private double angle;
@@ -22,17 +17,6 @@ public class LSystemRuleset implements Comparable<LSystemRuleset> {
     private String ruletext;
     private int lastviewedit;
 
-//    public LSystemRuleset(String name, double angle, String start, HashMap<Character,String> rules, ArrayList<String> comments) {
-//        NAME = name;
-//        this.angle = angle;
-//        this.rules = rules;
-//
-//        expansions = new HashMap<Integer,String>();
-//        expansions.put(0, start);
-//
-//        //printRules();
-//
-//    }
     public LSystemRuleset(String name) {
         NAME = name;
         rules = new HashMap<Character, String>();
@@ -149,7 +133,7 @@ public class LSystemRuleset implements Comparable<LSystemRuleset> {
     public int compareTo(LSystemRuleset rs) {
         int val = this.NAME.compareTo(rs.NAME);
         //if (val != 0)
-            return val;
-        
+        return val;
+
     }
 }
